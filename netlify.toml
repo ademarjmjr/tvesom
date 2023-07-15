@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"  # Comando para build do seu projeto
+  publish = "dist"  # Diretório onde está o código a ser publicado
+
+[[redirects]]
+  from = "/*"  # Redirecionamento de todas as rotas
+  to = "/index.html"  # Arquivo principal da sua aplicação
+  status = 200  # Código de status do redirecionamento
