@@ -1,7 +1,7 @@
 body {
   font-family: Arial, sans-serif;
   width: auto;
-  margin: 2%;
+  margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
@@ -10,16 +10,44 @@ body {
 }
 /* Estilos específicos */
 header {
-  width: 104%;
+  width: 100%;
   background-color: #19ccc6;
   padding: 0;
-  padding-top: 3%;
-  padding-bottom: 3%;
+  
   text-align: center;
+}
+.baixo{
+  width: 100%;
+  background-color: black;
+  padding: 0;
+  color: gold;
+  font-size: 35px;
+  font-style: unset;
+  transition: transform 0.2s;
+}
+
+@keyframes blink-animation {
+  0% { opacity: 1; } /* O elemento é totalmente visível no início da animação */
+  50% { opacity: 0; } /* O elemento fica totalmente invisível no meio da animação */
+  100% { opacity: 1; } /* O elemento é totalmente visível novamente no final da animação */
+}
+
+.blink {
+  animation: blink-animation 3s infinite; /* Aplica a animação ao elemento com duração de 1 segundo, repetindo infinitamente */
+}
+
+.eletronica{
+  width: 98%;
+  margin-top: 1%;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 img{
-  width: 100%;
+  width: 98%;
+  border-radius: 10px;
 }
 
 
@@ -27,6 +55,8 @@ p{
   max-width: 600px;
   color: black;
   margin: 10px;
+  line-height: 25px;
+  font-size: 20px;
 }
 
 .dividida{
@@ -40,15 +70,22 @@ p{
 
 
 .wraper-part1{
-  width: 360px; 
+  width: 400px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 20px;
 }
 
 .wraper-part2{
-  width: 360px
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 section {
+  margin: 5px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.847);
@@ -64,7 +101,7 @@ section:hover{
   /* Estilos do botão */
 .whatsapp-button {
   display: inline-block;
-  background-color: #0eca53;
+  background-color: #54dd0a;
   color: #fff;
   text-decoration: none;
   padding: 10px 20px;
@@ -78,8 +115,7 @@ section:hover{
 }
 
 footer{
-  width: 104%;
-  background-color: #343438;
+  width: 100%;
 }
 .fim-do-site{
   width: 100%;
