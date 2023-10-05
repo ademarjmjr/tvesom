@@ -84,18 +84,92 @@ p{
   align-items: center;
 }
 
+.container01 p {
+  background-color:rgb(47, 130, 255);
+  border-radius: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 2%;
+}
+
+.container01 a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.847);
+}
+
+.destaque {
+  color: rgb(214, 43, 43);
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.destaque, h3{
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 45px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container02 p {
+  background-color: rgb(47, 130, 255);
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container02 a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.847);
+  margin-top: -45px;
+}
+
+.container03 p {
+  background-color: rgb(47, 130, 255);
+  border-radius: 10px;
+  padding: 2%;
+  font-size: 25px;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.container03 a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.847);
+  margin-top: -45px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-top: -10px;
+}
+
 section {
   margin: 5px;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 4px 7px rgba(0, 0, 0, 0.847);
-  background-color: aquamarine;
+  background-color: #19ccc6;
   margin-bottom: 20px;
   margin-top: 20px;
   transition: transform 0.2s;
 }
 section:hover{
-  background-color: #3dcfb4;
+  background-color: #19f5e2;
 }
 
   /* Estilos do botão */
@@ -108,10 +182,11 @@ section:hover{
   border-radius: 5px;
   font-weight: bold;
   cursor: pointer;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.847);
   transition: transform 0.2s;
 }
 .whatsapp-button:hover {
-  transform: scale(1.1); /* Aumenta o tamanho do botão em 10% quando passar o mouse por cima */
+  transform: scale(1.2); /* Aumenta o tamanho do botão em 10% quando passar o mouse por cima */
 }
 
 footer{
