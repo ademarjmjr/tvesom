@@ -172,6 +172,45 @@ section:hover{
   background-color: #19f5e2;
 }
 
+/*carrossel*/
+.container-crl .container-crl2{
+  width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+  overflow-x: hidden; /* Esconde qualquer conteúdo que ultrapasse a largura do contêiner */
+}
+
+.carrossel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carrossel2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+.imagens{
+  display: flex;
+  animation: carrossel 10s linear infinite;
+}
+
+@keyframes carrossel {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 6 * 3)); /* Ajuste o número de imagens */
+  }
+}
+
+.imagens img {
+  width: calc(100% / 6); /* Ajuste o número de imagens */
+  height: auto;
+  object-fit: cover;
+  border: solid 1px;
+  margin: 2%;
+}
+
   /* Estilos do botão */
 .whatsapp-button {
   display: inline-block;
