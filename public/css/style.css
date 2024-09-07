@@ -146,6 +146,10 @@ main section h2 {
   padding-bottom: 30px;
 }
 
+section {
+  width: 98%;
+}
+
 /* Footer */
 footer {
   background-color: #0073e6;
