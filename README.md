@@ -1,4 +1,4 @@
-# Eletrônica TVs
+# Eletrônica TVSOMREPARO
 
 Um site simples para atrair mais clientes para a Eletrônica TVsomreparo. Anunciar os seviços.
 
@@ -6,11 +6,11 @@ Link da landing page: https://tvsomreparo.com.br/
 
 ## Descrição:
 
-A Eletrônica TVs é uma empresa especializada em conserto e manutenção de televisores e sistemas de som. Oferecemos serviços profissionais para solucionar problemas com seus aparelhos eletrônicos, garantindo um atendimento de qualidade e utilizando peças originais. Nosso objetivo é proporcionar soluções rápidas e eficientes para problemas de imagem, som, conectividade e muito mais.
+A Eletrônica TVSOMREPARO é uma empresa especializada em conserto e manutenção de televisores e sistemas de som. Oferecemos serviços profissionais para solucionar problemas com seus aparelhos eletrônicos, garantindo um atendimento de qualidade e utilizando peças originais. Nosso objetivo é proporcionar soluções rápidas e eficientes para problemas de imagem, som, conectividade e muito mais.
 
 ## Recursos:
 
-- Conserto de TVs de diversas marcas e modelos.
+- Conserto de TVSOMREPARO de diversas marcas e modelos.
 - Reparo de sistemas de som, como caixas de som e cubos para guitarra.
 - Técnico altamente capacitado e especializado.
 - Utilização de equipamentos avançados e peças originais.
