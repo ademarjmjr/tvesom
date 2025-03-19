@@ -7,50 +7,52 @@
 
 /* Estilos gerais */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Montserrat";
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
-  padding: 0 20px;
+  padding: 0px;
+  margin: 0px;
 }
 
 /* Cabeçalho */
 header {
-
   background-color: #f4f4f4;
   color: rgb(12, 12, 12);
   padding: 10px 0;
   text-align: center;
 }
-
+/*
 header h1 {
-  margin-bottom: 10px;
-}
+  font-size: 3rem;
+}*/
 
 header.baixo {
   background-color: #005bb5;
-  padding: 5px 0;
+  padding: 10px 0;
 }
 
-header.baixo h3 {
+header.baixo h1 h2 {
+  font-family: 'Montserrat';
   margin: 5px 0;
+  font-size: 3rem;
 }
 
 header.baixo .blink {
   animation: blink 1.5s infinite;
 }
 
-/* Animação blink */
+/* Animação blink 
 @keyframes blink {
   50% {
     opacity: 0;
   }
-}
+}*/
 
 /* Imagem principal */
 .eletronica {
   text-align: center;
-  margin: 20px 0;
+  /*margin: 20px 0;*/
 }
 
 .eletronica img {
@@ -59,15 +61,30 @@ header.baixo .blink {
 }
 
 /* Seções principais */
-main section {
-  background-color: white;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+main {
+  width: 100%;
+  height: auto;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 
-main section h2 {
+.centralizar-main {
+  width: 90%;
+  padding: 0;
+}
+
+section {
+  background-color: white;
+  padding: 2%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+section h2 {
   color: #0073e6;
   margin-bottom: 10px;
 }
@@ -113,6 +130,9 @@ main section h2 {
   100% { transform: translateX(-100%); }
 }
 
+.segunda-imagem {
+  width: 100%;
+}
 .segunda-imagem img {
   width: 100%;
 }
@@ -138,7 +158,14 @@ main section h2 {
 }
 
 /* Flex container for melhoramento sections */
+.centralizar-flex-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .flex-container {
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -146,8 +173,17 @@ main section h2 {
   padding-bottom: 30px;
 }
 
-section {
-  width: 98%;
+.centralizar-container {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  background-color: #f4f4f4;
+  border: none;
+  box-shadow: none;
+  width: 95%;
 }
 
 /* Footer */
@@ -163,8 +199,27 @@ footer p {
 }
 
 /* Media queries */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
+
+  .centralizar-flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
   .flex-container {
+    width: 70vw;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 780px) {
+
+  .flex-container {
+    width: 90%;
+    flex-direction: column;
+  }
+
+  header.baixo h1 h2 {
+    font-size: 1rem;
   }
 }
