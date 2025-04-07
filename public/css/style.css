@@ -76,7 +76,7 @@ main {
   padding: 0;
 }
 
-section {
+article {
   background-color: white;
   padding: 2%;
   margin-bottom: 20px;
@@ -84,7 +84,7 @@ section {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-section h2 {
+article h2 {
   color: #0073e6;
   margin-bottom: 10px;
 }
@@ -137,40 +137,46 @@ section h2 {
   width: 100%;
 }
 
-/* Seções de melhoramento */
-.melhoramento, .melhoramento2, .melhoramento3 {
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  flex: 1;
-  
-  min-width: 250px; /* Largura mínima para telas menores */
-}
-
-.melhoramento h3, .melhoramento2 h4, .melhoramento3 h4 {
-  color: #0073e6;
-}
-
-.melhoramento p, .melhoramento2 p, .melhoramento3 p {
-  margin: 10px 0;
-}
-
-/* Flex container for melhoramento sections */
+/* Flex container for melhoramento  */
 .centralizar-flex-container {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .flex-container {
   width: 90%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 50px;
   padding-bottom: 30px;
+  
+}
+
+/* Seções de melhoramento */
+.melhoramento01, .melhoramento02, .melhoramento03  {
+  width: 30%;
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.melhoramento01 h3, .melhoramento02 h3, .melhoramento03 h3 {
+  color: #0073e6;
+}
+
+h4 {
+  color: #0073e6;
+  margin-bottom: 2%;
+}
+
+ul, li {
+  margin: 10px 0;
+  margin-left: .8rem;
+  max-width: 80%;
 }
 
 .centralizar-container {
@@ -200,28 +206,49 @@ footer p {
 
 /* Media queries */
 @media (max-width: 980px) {
-
+  
   .centralizar-flex-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
   }
+
   .flex-container {
-    width: 70vw;
-    flex-direction: column;
+    width: 80%;
+    display: block;
+  }
+
+  .melhoramento01, .melhoramento02, .melhoramento03  {
+    width: 100%;
+
   }
 }
 
 @media (max-width: 780px) {
 
-  .flex-container {
-    width: 90%;
-    flex-direction: column;
-  }
-
   header.baixo h1 h2 {
     font-size: 1rem;
   }
+
+  
+  .centralizar-flex-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-container {
+    width: 80%;
+    display: block;
+  }
+
+  .melhoramento01, .melhoramento02, .melhoramento03  {
+    width: 100%;
+
+  }
+
 }
 
 @media (max-width: 460px) {
@@ -231,5 +258,18 @@ footer p {
 
   .baixo h2 {
     font-size: 1.3rem;
+  }
+
+  .flex-container {
+    width: 95%;
+    display: block;
+  }
+
+  .melhoramento01, .melhoramento02, .melhoramento03  {
+    width: 100%;
+  }
+
+  article {
+    padding: .8rem;
   }
 }
